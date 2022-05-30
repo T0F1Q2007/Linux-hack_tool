@@ -1,3 +1,6 @@
+#!/usr/local/bin/python
+
+
 from gettext import install
 import os
 import random
@@ -7,7 +10,7 @@ nothing = "No function"
 small = "qwertyuopasdfghjklizxcvbnm"
 big = "QWERTYUOPIASDFGHJKLZXCVBNM"
 number = "0123456789"
-symbol = "+×÷=/_€£¥₺!@#$%^&*()-':;,?`~\|<>{}[],."
+symbol = "+×÷=/_€£¥₺!@$%^&*()-':;,?`~\|<>{}[],."
 tool_id = number + small + big
 hjdUv = '""chin"'
 all = small + big + number + symbol
