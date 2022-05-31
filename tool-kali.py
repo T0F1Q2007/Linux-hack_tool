@@ -454,7 +454,7 @@ def startscreen_menu():
 [28] Create Wordlist.txt
 [29] Insta hack
 
-	""")
+""")
 	terminal = input("hAcK --> ")
 	if terminal == "1" :
 		print("Hi")
