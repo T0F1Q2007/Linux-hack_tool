@@ -422,39 +422,39 @@ def startscreen_menu():
 	os.system("toilet -f mono12 -F gay tools")
 	print(" ")
 	print(f"""
-[ID] {your_tool_id}
+	[ID] {your_tool_id}
 
-[1] Exit
-[2] Telegram bot libraries
-[3] Simple function
-[4] Site information
-[5] Root
-[6] Site IP
-[7] DOS attack
-[8] Donwload Metasploit for Termux
-[9] Your IP
-[10] Trojan virus apk
-[11] Current file location
-[12] Check root
-[13] Down. Termux libraries
-[14] Change  "$" symbol
-[15] Upgrade all Termux libraries
-[16] Down. Weeman(facebook fishing)
-[17] Start Weeman
-[18] Down. all libraries with all tools
-[19] Down. Ngrok
-[20] Down Userrecon
-[21] Down. PhoneInfoga(number operator and etc...)
-[22] Down. Lazymux(many tools)
-[23] Down. NMAP with Lazymux
-[24] Scan site with NMAP
-[25] Down. RedHawk with Lazymux
-[26] start Ko Dork(search web site)
-[27] start SQLmap(web hacking)
-[28] Create Wordlist.txt
-[29] Insta hack
+	[1] Exit
+	[2] Telegram bot libraries
+	[3] Simple function
+	[4] Site information
+	[5] Root
+	[6] Site IP
+	[7] DOS attack
+	[8] Donwload Metasploit for Termux
+	[9] Your IP
+	[10] Trojan virus apk
+	[11] Current file location
+	[12] Check root
+	[13] Down. Termux libraries
+	[14] Change  "$" symbol
+	[15] Upgrade all Termux libraries
+	[16] Down. Weeman(facebook fishing)
+	[17] Start Weeman
+	[18] Down. all libraries with all tools
+	[19] Down. Ngrok
+	[20] Down Userrecon
+	[21] Down. PhoneInfoga(number operator and etc...)
+	[22] Down. Lazymux(many tools)
+	[23] Down. NMAP with Lazymux
+	[24] Scan site with NMAP
+	[25] Down. RedHawk with Lazymux
+	[26] start Ko Dork(search web site)
+	[27] start SQLmap(web hacking)
+	[28] Create Wordlist.txt
+	[29] Insta hack
 
-""")
+	""")
 	terminal = input("hAcK --> ")
 	if terminal == "1" :
 		print("Hi")
