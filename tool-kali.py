@@ -421,9 +421,8 @@ def startscreen_menu():
 	print(" ")
 	os.system("toilet -f mono12 -F gay tools")
 	print(" ")
+	print("[ID] " + your_tool_id)
 	print("""
-	[ID] {your_tool_id}
-
 	[1] Exit
 	[2] Telegram bot libraries
 	[3] Simple function
